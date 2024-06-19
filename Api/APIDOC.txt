@@ -1,0 +1,87 @@
+
+
+1) Api for fetching token:
+
+   url:http://127.0.0.1:8000/Api/token
+
+   method:post
+
+   data:{username,password}
+
+   authentication: nill
+
+
+schema : Customer
+
+attributes : {name,
+              email,
+              phone,
+              vehicle_number,
+              running_km,
+              technician,
+              status,
+              created_date,
+              updated_date,is_active
+              }
+
+2) Api for listing all Customer:
+
+   url:http://127.0.0.1:8000/Api/customer//
+
+   method:get
+
+   data:nill
+
+   authentication: Token  
+
+3) Api for retreiving oneCustomer:
+
+   url:http://127.0.0.1:8000/Api/customer//{id}
+
+   method:get
+
+   data:nill
+
+   authentication: Token  
+
+
+4) Api for adding Customer:
+
+   url:http://127.0.0.1:8000/Api/customer/
+
+   method:post
+
+   data:{name,
+         email,
+         phone,
+         vehicle_number,
+         running_km,}
+
+   authentication: Token  
+
+
+5) Api for updating Customer:
+
+   url:http://127.0.0.1:8000/Api/customer//{id}
+
+   method:put
+
+   data:{name,
+         email,
+         phone,
+         vehicle_number,
+         running_km,}
+
+   authentication: Token 
+
+
+6) Api for deleting Customer:
+
+   url:http://127.0.0.1:8000/Api/customer//{id}
+
+   method:put
+
+   data:{nill}
+
+   authentication: Token 
+
