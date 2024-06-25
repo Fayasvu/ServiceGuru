@@ -26,7 +26,7 @@ attributes : {name,
 
 2) Api for listing all Customer:
 
-   url:http://127.0.0.1:8000/Api/customer//
+   url:http://127.0.0.1:8000/Api/customer/
 
    method:get
 
@@ -36,7 +36,7 @@ attributes : {name,
 
 3) Api for retreiving oneCustomer:
 
-   url:http://127.0.0.1:8000/Api/customer//{id}
+   url:http://127.0.0.1:8000/Api/customer/{id}
 
    method:get
 
@@ -62,7 +62,7 @@ attributes : {name,
 
 5) Api for updating Customer:
 
-   url:http://127.0.0.1:8000/Api/customer//{id}
+   url:http://127.0.0.1:8000/Api/customer/{id}
 
    method:put
 
@@ -77,7 +77,7 @@ attributes : {name,
 
 6) Api for deleting Customer:
 
-   url:http://127.0.0.1:8000/Api/customer//{id}
+   url:http://127.0.0.1:8000/Api/customer/{id}
 
    method:put
 
@@ -85,3 +85,14 @@ attributes : {name,
 
    authentication: Token 
 
+=============================================Work===============================
+
+1) Api for adding Customer:
+
+   url:http://127.0.0.1:8000/Api/customer/{id}/add_work
+
+   method:Post
+
+   data:{title,description,amount}
+
+   authentication: Token 

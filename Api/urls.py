@@ -4,10 +4,11 @@ from rest_framework.routers import DefaultRouter
 from Api.views import Customerviewsetview
 
 router=DefaultRouter()
-router.register("customer/",Customerviewsetview,basename="customer")
+router.register("customer",Customerviewsetview,basename="customer")
 
 urlpatterns=[
 
-    path("token/",ObtainAuthToken.as_view())
+    path("token/",ObtainAuthToken.as_view()),
+    # path("creatework/<int:pk>",workcreateview.as_view())
         
 ]+router.urls
